@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/graywhite">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="กรุณาบอกเราเกี่ยวกับตัวคุณซักนิด"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/mitr_medium"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คุณ"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/mitr_regular"
+            android:gravity="center"  />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_background"
+        android:inputType="text"
+        android:gravity="center"
+        android:padding="1dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="อายุ"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"/>
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            android:padding="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปี"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="สูง"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"/>
+
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:padding="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ซม."
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/mitr_regular"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="น้ำหนัก"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_background"
+        android:gravity="center"
+        android:padding="1dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กก.."
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"/>
+
+</LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="95dp"
+            android:background="@drawable/male_rcbtn_selector"
+            android:button="@color/transparent"
+            android:drawableTop="@drawable/ic_male"
+            android:drawableTint="@color/male_text_selector"
+            android:padding="17dp"
+            android:text="male"
+            android:textColor="@color/transparent" />
+
+        <RadioButton
+            android:background="@drawable/female_rcbtn_selector"
+            android:button="@color/transparent"
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="17dp"
+            android:text="female"
+            android:textColor="@color/transparent"
+            android:drawableTop="@drawable/ic_female"
+            android:layout_marginStart="30dp"
+            android:drawableTint="@color/female_text_selector"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ถัดไป"
+        android:fontFamily="@font/mitr_medium"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThaiCal</string>
+    <string-array name="meat_options">
+        <item>Beef</item>
+        <item>Chicken</item>
+        <item>Pork</item>
+    </string-array>
+    <string name="back_button_description">Back</string>
+</resources>

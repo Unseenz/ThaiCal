@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="defaultBtnColor">#808080</color>
+    <color name="focusBtnColor">#456789</color>
+    <color name="pressBtnColor">#308F9F</color>
+    <color name="selectedColor">#FF4081</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="graywhite">#F5F7F8</color>
+    <color name="yellowbtn">#F4CE14</color>
+    <color name="topbar">#495E57</color>
+    <color name="blacklight">#45474B</color>
+    <color name="bluemale">#A3D8FF</color>
+    <color name="pinkfemale">#FF76CE</color>
+    <color name="greensubmit">#41B06E</color>
+
+
+
+</resources>

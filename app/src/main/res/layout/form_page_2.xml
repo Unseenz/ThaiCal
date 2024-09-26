@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/graywhite">
+
+    <ImageView
+        android:id="@+id/backtoF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back_button_description"
+        android:padding="10dp"
+        android:src="@drawable/ic_back_button" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTDEE"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:button="@color/transparent"
+            android:id="@+id/TTDE1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:fontFamily="@font/mitr_medium"
+            android:background="@drawable/ttde_selector"
+            android:text="ออกกำลังกายน้อยหรือไม่มีเลย"
+            android:tag="1.2"/>
+
+        <RadioButton
+            android:button="@color/transparent"
+            android:id="@+id/TTDE2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:fontFamily="@font/mitr_medium"
+            android:background="@drawable/ttde_selector"
+            android:layout_marginTop="20dp"
+            android:text="ออกกำลังกายหรือเล่นกีฬาเล็กน้อย ประมาณอาทิตย์ละ 1-3 วัน"
+            android:tag="1.375"/>
+
+        <RadioButton
+            android:button="@color/transparent"
+            android:id="@+id/TTDE3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:fontFamily="@font/mitr_medium"
+            android:background="@drawable/ttde_selector"
+            android:layout_marginTop="20dp"
+            android:text="ออกกำลังกายปานกลาง 3-5 วัน/สัปดาห์"
+            android:tag="1.55"/>
+
+        <RadioButton
+            android:button="@color/transparent"
+            android:id="@+id/TTDE4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:fontFamily="@font/mitr_medium"
+            android:background="@drawable/ttde_selector"
+            android:layout_marginTop="20dp"
+            android:text="ออกกำลังกายอย่างหนัก 6-7 วัน/สัปดาห์"
+            android:tag="1.725"/>
+
+        <RadioButton
+            android:button="@color/transparent"
+            android:id="@+id/TTDE5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:fontFamily="@font/mitr_medium"
+            android:background="@drawable/ttde_selector"
+            android:layout_marginTop="20dp"
+            android:text="ออกกำลังกายหรือเล่นกีฬาอย่างหนักมาก ทุกวันเช้า และเย็น"
+            android:tag="1.9"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnSubmit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="บันทึก"
+        android:fontFamily="@font/mitr_medium"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@color/greensubmit" />
+
+
+</LinearLayout>

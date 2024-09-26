@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graywhite"
+    tools:context=".Second_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvStories"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="300dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Your ImageView goes here -->
+        <ImageView
+            android:id="@+id/foodpic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/result"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/selectmeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="กรุณาเลือกเนื้อสัตว์"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/mitr_medium"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result" />
+
+    <RadioGroup
+        android:id="@+id/meatRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/selectmeat">
+
+        <RadioButton
+            android:id="@+id/radio_beef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:text="Beef"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@drawable/text_color"
+            android:textSize="20sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_chicken"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chicken"
+            android:button="@color/transparent"
+            android:fontFamily="@font/mitr_regular"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_pork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pork"
+            android:textSize="20sp"
+            android:button="@color/transparent"
+            android:fontFamily="@font/mitr_regular"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:gravity="center"
+            android:layout_marginEnd="50dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tdeetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="คิดเป็น"
+        app:layout_constraintTop_toBottomOf="@id/calcard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/mitr_regular"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/calpercen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="calper"
+        app:layout_constraintTop_toBottomOf="@id/tdeetitle"
+        android:fontFamily="@font/mitr_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ของพลังงานที่ควรได้รับต่อวัน"
+        app:layout_constraintTop_toBottomOf="@id/calpercen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/mitr_regular"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result : "
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/cvStories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/mitr_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calcard"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/meatRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="@color/greensubmit">
+
+        <TextView
+            android:id="@+id/caloriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Calories"
+            android:textAlignment="center"
+            android:fontFamily="@font/mitr_bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back_button_description"
+        android:padding="20dp"
+        android:src="@drawable/ic_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
